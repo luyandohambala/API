@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bqrxowIZjnIU7zIBz6z3vGC1dcQL6pzXXgs6PBNbxPI=",
+  "Source": "SMSAPI",
+  "BasePath": "_content/SMSAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
