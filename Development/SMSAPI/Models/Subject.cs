@@ -9,6 +9,8 @@
 
         public Guid SubjectGradeId { get; set; }
 
-        public ICollection<ClassRoomSubject> ClassRooms { get; set; }  
+        public ICollection<ClassRoomSubject> ClassRooms { get; set; }
+
+        public ICollection<TeacherSubject> Teachers { get; set; }   
     }
 }

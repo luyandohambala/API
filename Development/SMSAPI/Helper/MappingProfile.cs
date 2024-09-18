@@ -3,11 +3,17 @@ using SMSAPI.Dto.ClassRoomDto;
 using SMSAPI.Dto.GuardianContactDto;
 using SMSAPI.Dto.GuardianDto;
 using SMSAPI.Dto.IngredientDto;
+using SMSAPI.Dto.MealPaymentDto;
+using SMSAPI.Dto.MealPaymentHistoryDto;
+using SMSAPI.Dto.MealPreparedDto;
 using SMSAPI.Dto.PupilDto;
 using SMSAPI.Dto.Register;
 using SMSAPI.Dto.ReportCardDto;
 using SMSAPI.Dto.ReportCardSubjectDto;
 using SMSAPI.Dto.SubjectDto;
+using SMSAPI.Dto.TeacherAddressDto;
+using SMSAPI.Dto.TeacherContactDto;
+using SMSAPI.Dto.TeacherDto;
 using SMSAPI.Models;
 
 namespace SMSAPI.Helper
@@ -18,7 +24,7 @@ namespace SMSAPI.Helper
         {
             //To Dto Mapping
             CreateMap<ClassRoom, ClassRoomReadDto>();
-            CreateMap<ClassRoom, ClassRoomWithPupilsDto>();
+            CreateMap<ClassRoom, ClassRoomWithPupilsDto>(); 
             CreateMap<ClassRoom, ClassRoomWithSubjectsDto>();
             
             CreateMap<Subject, SubjectReadDto>();
@@ -39,6 +45,17 @@ namespace SMSAPI.Helper
 
             CreateMap<Ingredient, IngredientReadDto>();
 
+            CreateMap<MealPayment, MealPaymentReadDto>();
+
+            CreateMap<MealPaymentHistory, MealPaymentHistoryReadDto>();
+
+            CreateMap<MealPrepared, MealPreparedReadDto>();
+
+            CreateMap<TeacherContact, TeacherContactReadDto>();
+
+            CreateMap<TeacherAddress, TeacherAddressReadDto>();
+
+            CreateMap<Teacher, TeacherReadDto>();
 
 
             //From Dto Mapping
@@ -69,6 +86,25 @@ namespace SMSAPI.Helper
             CreateMap<IngredientCreateDto, Ingredient>();
             CreateMap<IngredientUpdateDto, Ingredient>();
             CreateMap<IngredientCalculateUpdateDto, Ingredient>();
+
+            CreateMap<MealPaymentUpdateDto, MealPayment>();
+            CreateMap<MealPaymentStatusUpdateDto, MealPayment>();
+            CreateMap<MealPaymentCreateDto, MealPayment>();
+
+            CreateMap<MealPaymentHistoryCreateDto, MealPaymentHistory>();
+            CreateMap<MealPaymentHistoryUpdateDto, MealPaymentHistory>();
+
+            CreateMap<MealPreparedCreateDto, MealPrepared>();
+            CreateMap<MealPreparedUpdateDto, MealPrepared>();
+
+            CreateMap<TeacherContactCreateDto, TeacherContact>();
+            CreateMap<TeacherContactUpdateDto, TeacherContact>();
+
+            CreateMap<TeacherAddressCreateDto, TeacherAddress>();
+            CreateMap<TeacherAddressUpdateDto, TeacherAddress>();
+
+            CreateMap<TeacherCreateDto, Teacher>();
+            CreateMap<TeacherUpdateDto, Teacher>();
         }
     }
 }

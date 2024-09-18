@@ -1,12 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using SMSAPI.Dto.ClassRoomDto;
 using SMSAPI.Dto.GuardianContactDto;
-using SMSAPI.Dto.PupilDto;
-using SMSAPI.Dto.SubjectDto;
 using SMSAPI.Interfaces;
 using SMSAPI.Models;
-using SMSAPI.Repository;
 
 namespace SMSAPI.Controllers
 {
@@ -79,7 +75,7 @@ namespace SMSAPI.Controllers
         /// </summary>
         /// <param name="guardianContactCreate"></param>
         /// <returns></returns>
-        //Post classroom
+        //Post guardiancontact
         [HttpPost]
         //[ServiceFilter(typeof(AuthFilter))]
         [ProducesResponseType(204)]
@@ -90,7 +86,7 @@ namespace SMSAPI.Controllers
 
             if (_guardianContactRepository.GuardianContactExists(guardianContactCreate.GuardianContactId))
             {
-                ModelState.AddModelError("", "ClassRoom already exists.");
+                ModelState.AddModelError("", "GuardianContact already exists.");
                 return StatusCode(422, ModelState);
             }
             if (!ModelState.IsValid) return BadRequest(ModelState);
@@ -113,7 +109,7 @@ namespace SMSAPI.Controllers
         /// <param name="guardianContactId"></param>
         /// <param name="guardianContactUpdate"></param>
         /// <returns></returns>
-        //Put classroom
+        //Put guardianContact
         [HttpPut("{guardianContactId}")]
         //[ServiceFilter(typeof(AuthFilter))]
         [ProducesResponseType(204)]
@@ -151,7 +147,7 @@ namespace SMSAPI.Controllers
         /// </summary>
         /// <param name="guardianContactId"></param>
         /// <returns></returns>
-        //delete classroom
+        //delete guardianContact
         [HttpDelete("{guardianContactId}")]
         //[ServiceFilter(typeof(AuthFilter))]
         [ProducesResponseType(204)]
@@ -167,7 +163,7 @@ namespace SMSAPI.Controllers
 
             if (!_guardianContactRepository.DeleteGuardianContact(guardianContactToDelete))
             {
-                ModelState.AddModelError("", "Something went wrong while deleting the classroom");
+                ModelState.AddModelError("", "Something went wrong while deleting the GuardianContact");
                 return StatusCode(500, ModelState);
             }
 

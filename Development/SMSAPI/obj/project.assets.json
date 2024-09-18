@@ -1035,11 +1035,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\Programming\\c#\\Profit\\SMSAPI\\SMSAPI.csproj",
+      "projectUniqueName": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\SMSAPI.csproj",
       "projectName": "SMSAPI",
-      "projectPath": "I:\\Programming\\c#\\Profit\\SMSAPI\\SMSAPI.csproj",
+      "projectPath": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\SMSAPI.csproj",
       "packagesPath": "C:\\Users\\TINOTECH\\.nuget\\packages\\",
-      "outputPath": "I:\\Programming\\c#\\Profit\\SMSAPI\\obj\\",
+      "outputPath": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

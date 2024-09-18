@@ -1,34 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "I:\\Programming\\c#\\Profit\\SMSAPI\\",
+  "WorkspaceRootPath": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\profit\\smsapi\\controllers\\classregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:controllers\\classregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\business\\api\\development\\smsapi\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\profit\\smsapi\\controllers\\ingredientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:controllers\\ingredientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\business\\api\\development\\smsapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\profit\\smsapi\\repository\\ingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:repository\\ingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\business\\api\\development\\smsapi\\helper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:helper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\profit\\smsapi\\interfaces\\iingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:interfaces\\iingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\profit\\smsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\business\\api\\development\\smsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\profit\\smsapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\business\\api\\development\\smsapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\profit\\smsapi\\helper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:helper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|i:\\programming\\c#\\business\\api\\development\\smsapi\\controllers\\classregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DBA56F7-7964-4A7D-BAC7-157E7C69C99F}|SMSAPI.csproj|solutionrelative:controllers\\classregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,106 +33,89 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 164,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 163,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "I:\\Programming\\c#\\Profit\\SMSAPI\\Program.cs",
+              "DocumentMoniker": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "I:\\Programming\\c#\\Profit\\SMSAPI\\Program.cs",
+              "ToolTip": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAcwCIAAAA3AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T16:41:35.993Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IIngredientRepository.cs",
-              "DocumentMoniker": "I:\\Programming\\c#\\Profit\\SMSAPI\\Interfaces\\IIngredientRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IIngredientRepository.cs",
-              "ToolTip": "I:\\Programming\\c#\\Profit\\SMSAPI\\Interfaces\\IIngredientRepository.cs",
-              "RelativeToolTip": "Interfaces\\IIngredientRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T01:27:25.099Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClassRegisterController.cs",
-              "DocumentMoniker": "I:\\Programming\\c#\\Profit\\SMSAPI\\Controllers\\ClassRegisterController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClassRegisterController.cs",
-              "ToolTip": "I:\\Programming\\c#\\Profit\\SMSAPI\\Controllers\\ClassRegisterController.cs",
-              "RelativeToolTip": "Controllers\\ClassRegisterController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwC8AAABMAAAA",
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IDepartmentRepository.cs",
+              "ToolTip": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeToolTip": "Interfaces\\IDepartmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T21:03:11.435Z",
+              "WhenOpened": "2024-09-18T19:46:55.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "DataContext.cs",
-              "DocumentMoniker": "I:\\Programming\\c#\\Profit\\SMSAPI\\Data\\DataContext.cs",
+              "DocumentMoniker": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Data\\DataContext.cs",
               "RelativeDocumentMoniker": "Data\\DataContext.cs",
-              "ToolTip": "I:\\Programming\\c#\\Profit\\SMSAPI\\Data\\DataContext.cs",
+              "ToolTip": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Data\\DataContext.cs",
               "RelativeToolTip": "Data\\DataContext.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAADwvzIAAAA6AAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAmwEgAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T08:27:35.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T08:27:35.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClassRegisterController.cs",
+              "DocumentMoniker": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Controllers\\ClassRegisterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClassRegisterController.cs",
+              "ToolTip": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Controllers\\ClassRegisterController.cs",
+              "RelativeToolTip": "Controllers\\ClassRegisterController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T21:03:11.435Z"
             }
           ]
         },
         {
-          "DockedWidth": 236,
+          "DockedWidth": 237,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IngredientController.cs",
-              "DocumentMoniker": "I:\\Programming\\c#\\Profit\\SMSAPI\\Controllers\\IngredientController.cs",
-              "RelativeDocumentMoniker": "Controllers\\IngredientController.cs",
-              "ToolTip": "I:\\Programming\\c#\\Profit\\SMSAPI\\Controllers\\IngredientController.cs",
-              "RelativeToolTip": "Controllers\\IngredientController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAtAAAA",
+              "Title": "Department.cs",
+              "DocumentMoniker": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T01:34:36.286Z",
+              "WhenOpened": "2024-09-18T19:46:38.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IngredientRepository.cs",
-              "DocumentMoniker": "I:\\Programming\\c#\\Profit\\SMSAPI\\Repository\\IngredientRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IngredientRepository.cs",
-              "ToolTip": "I:\\Programming\\c#\\Profit\\SMSAPI\\Repository\\IngredientRepository.cs",
-              "RelativeToolTip": "Repository\\IngredientRepository.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAADcAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T01:30:15.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "MappingProfile.cs",
-              "DocumentMoniker": "I:\\Programming\\c#\\Profit\\SMSAPI\\Helper\\MappingProfile.cs",
+              "DocumentMoniker": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Helper\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Helper\\MappingProfile.cs",
-              "ToolTip": "I:\\Programming\\c#\\Profit\\SMSAPI\\Helper\\MappingProfile.cs",
+              "ToolTip": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\Helper\\MappingProfile.cs",
               "RelativeToolTip": "Helper\\MappingProfile.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwEYAAAApAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAxwDkAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T07:57:43.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T07:57:43.068Z"
             }
           ]
         }

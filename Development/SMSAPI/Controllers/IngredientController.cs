@@ -22,7 +22,10 @@ namespace SMSAPI.Controllers
         }
 
 
-
+        /// <summary>
+        /// http get requests
+        /// </summary>
+        /// <returns></returns>
         //get regular collectiion of ingredients
         [HttpGet]
         //[ServiceFilter(typeof(AuthFilter))]

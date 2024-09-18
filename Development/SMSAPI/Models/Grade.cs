@@ -8,7 +8,9 @@
 
 
         //Navigation properties
-        public ICollection<ClassRoom> ClassRooms { get; set; }  
+        public ICollection<ClassRoom> ClassRooms { get; set; }
+
+        public ICollection<TeacherGrades> TeacherGrades { get; set; }   
     }
 
 }

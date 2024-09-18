@@ -12,12 +12,14 @@ namespace SMSAPI.Controllers
     public class PupilController : Controller
     {
         private readonly IPupilRepository _pupilRepository;
+        private readonly IMealPaymentRepository _mealPaymentRepository;
         private readonly IReportCardRepository _reportCardRepository;
         private readonly IMapper _mapper;
 
-        public PupilController(IPupilRepository pupilRepository, IReportCardRepository reportCardRepository, IMapper mapper)
+        public PupilController(IPupilRepository pupilRepository, IMealPaymentRepository mealPaymentRepository, IReportCardRepository reportCardRepository, IMapper mapper)
         {
             _pupilRepository = pupilRepository;
+            _mealPaymentRepository = mealPaymentRepository;
             _reportCardRepository = reportCardRepository;
             _mapper = mapper;
         }
@@ -194,15 +196,26 @@ namespace SMSAPI.Controllers
 
             var reportCardsToDelete = _pupilRepository.GetReportCardByPupilId(pupilId);
 
+            var mealPaymentStatusToDelete = _mealPaymentRepository.GetMealPaymentByPupilId(pupilId);
+             
             var pupilToDelete = _pupilRepository.GetPupil(pupilId);
 
             if (!ModelState.IsValid) return BadRequest(ModelState);
-
+             
             if (reportCardsToDelete.Count != 0)
             {
                 if (!_reportCardRepository.DeleteReportCards([.. reportCardsToDelete]))
                 {
                     ModelState.AddModelError("", "Something went wrong while deleting the ReportCards belonging to this Pupil");
+                    return StatusCode(500, ModelState);
+                }
+            }
+
+            if (mealPaymentStatusToDelete != null)
+            {
+                if (!_mealPaymentRepository.DeleteMealPayment(mealPaymentStatusToDelete))
+                {
+                    ModelState.AddModelError("", "Something went wrong while deleting the MealPaymentStatus belonging to this Pupil");
                     return StatusCode(500, ModelState);
                 }
             }

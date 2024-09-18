@@ -29,6 +29,11 @@ namespace SMSAPI
             builder.Services.AddScoped<IRegisterRepository, RegisterRepository>();
             builder.Services.AddScoped<IClassRegisterRepository, ClassRegisterRepository>();
             builder.Services.AddScoped<IIngredientRepository, IngredientRepository>();
+            builder.Services.AddScoped<IMealPaymentRepository, MealPaymentRepository>();
+            builder.Services.AddScoped<IMealPreparedRepository, MealPreparedRepository>();
+            builder.Services.AddScoped<ITeacherContactRepository, TeacherContactRepository>();
+            builder.Services.AddScoped<ITeacherAddressRepository, TeacherAddressRepository>();
+            builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
 
             builder.Services.AddScoped<AuthFilter>();
             builder.Services.AddScoped<IAuthentication, Authentication_>();

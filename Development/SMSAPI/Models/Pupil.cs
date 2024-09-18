@@ -8,8 +8,6 @@
 
         public string LastName { get; set; }
 
-        public string FirstLastName => FirstName + " " + LastName;
-
         public string Gender { get; set; }
 
         public DateOnly DateOfBirth { get; set; }

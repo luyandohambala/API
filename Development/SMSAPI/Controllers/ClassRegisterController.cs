@@ -22,7 +22,6 @@ namespace SMSAPI.Controllers
         }
 
 
-
         /// <summary>
         /// http get requests
         /// </summary>

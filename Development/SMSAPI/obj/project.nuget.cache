@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S6a71XLAnCs=",
+  "dgSpecHash": "4o0s2qN7SUU=",
   "success": true,
-  "projectFilePath": "I:\\Programming\\c#\\Profit\\SMSAPI\\SMSAPI.csproj",
+  "projectFilePath": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\SMSAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TINOTECH\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\TINOTECH\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.8\\microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
