@@ -24,6 +24,6 @@
 
         public TeacherAddress TeacherAddress { get; set; }
 
-        public Department Department { get; set; }
+        public DepartmentTeacher Department { get; set; }
     }
 }

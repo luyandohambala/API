@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using SMSAPI.Dto.TeacherContactDto;
 using SMSAPI.Interfaces;
 using SMSAPI.Models;
-using SMSAPI.Repository;
 
 namespace SMSAPI.Controllers
 {

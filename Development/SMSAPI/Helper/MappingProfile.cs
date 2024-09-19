@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using SMSAPI.Dto.ClassRoomDto;
+using SMSAPI.Dto.DepartmentDto;
 using SMSAPI.Dto.GuardianContactDto;
 using SMSAPI.Dto.GuardianDto;
 using SMSAPI.Dto.IngredientDto;
@@ -10,6 +11,9 @@ using SMSAPI.Dto.PupilDto;
 using SMSAPI.Dto.Register;
 using SMSAPI.Dto.ReportCardDto;
 using SMSAPI.Dto.ReportCardSubjectDto;
+using SMSAPI.Dto.StaffAddressDto;
+using SMSAPI.Dto.StaffContactDto;
+using SMSAPI.Dto.StaffDto;
 using SMSAPI.Dto.SubjectDto;
 using SMSAPI.Dto.TeacherAddressDto;
 using SMSAPI.Dto.TeacherContactDto;
@@ -55,8 +59,15 @@ namespace SMSAPI.Helper
 
             CreateMap<TeacherAddress, TeacherAddressReadDto>();
 
-            CreateMap<Teacher, TeacherReadDto>();
+            CreateMap<Teacher, StaffReadDto>();
 
+            CreateMap<Department, DepartmentReadDto>();
+
+            CreateMap<Staff, StaffReadDto>();
+
+            CreateMap<StaffContact, StaffContactReadDto>();
+
+            CreateMap<StaffAddress, StaffAddressReadDto>();
 
             //From Dto Mapping
             CreateMap<ClassRoomCreateDto, ClassRoom>();
@@ -105,6 +116,17 @@ namespace SMSAPI.Helper
 
             CreateMap<TeacherCreateDto, Teacher>();
             CreateMap<TeacherUpdateDto, Teacher>();
+
+            CreateMap<DepartmentCreateDto, Department>();
+            
+            CreateMap<StaffContactCreateDto, StaffContact>();
+            CreateMap<StaffContactUpdateDto, StaffContact>();
+
+            CreateMap<StaffAddressCreateDto, StaffAddress>();
+            CreateMap<StaffAddressUpdateDto, StaffAddress>();
+            
+            CreateMap<StaffCreateDto, Staff>();
+            CreateMap<StaffUpdateDto, Staff>();
         }
     }
 }

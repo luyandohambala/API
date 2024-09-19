@@ -11,8 +11,8 @@
 
 
         //navigation properties
-        public ICollection<Teacher> Teachers { get; set; }
-
+        public ICollection<DepartmentTeacher> Teachers { get; set; }
+         
         public ICollection<Staff> Staff { get; set; }   
     }
 }

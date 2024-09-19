@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using SMSAPI.Dto.StaffAddressDto;
 using SMSAPI.Dto.TeacherAddressDto;
 using SMSAPI.Interfaces;
 using SMSAPI.Models;
@@ -40,7 +41,7 @@ namespace SMSAPI.Controllers
         //get teacheraddress by teacheraddressId
         [HttpGet("TeacherAddress/id/{teacherAddressId}")]
         //[ServiceFilter(typeof(AuthFilter))]
-        [ProducesResponseType(200, Type = typeof(ClassRegister))]
+        [ProducesResponseType(200, Type = typeof(TeacherAddress))]
         [ProducesResponseType(400)]
         public IActionResult GetTeacherAddress(Guid teacherAddressId)
         {

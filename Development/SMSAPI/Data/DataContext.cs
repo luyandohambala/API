@@ -7,7 +7,7 @@ namespace SMSAPI.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-            
+
         }
 
 
@@ -60,7 +60,20 @@ namespace SMSAPI.Data
         public DbSet<TeacherContact> TeacherContacts { get; set; }
 
         //teachers table
-        public DbSet<Teacher> Teachers { get; set; }  
+        public DbSet<Teacher> Teachers { get; set; }
+
+        //department table
+        public DbSet<Department> Departments { get; set; }
+
+        //staffaddresses table
+        public DbSet<StaffAddress> StaffAddresses { get; set; }
+
+        //staffcontact table
+        public DbSet<StaffContact> StaffContacts { get; set; }
+        
+
+        //staff table
+        public DbSet<Staff> Staff { get; set; }
 
 
         //Join tables
@@ -71,6 +84,8 @@ namespace SMSAPI.Data
         public DbSet<ClassRoomRegister> ClassRoomRegisters { get; set; }
 
         public DbSet<TeacherSubject> TeacherSubjects { get; set; }
+
+        public DbSet<DepartmentTeacher> DepartmentTeachers { get; set; }
 
 
         //model builder section
@@ -111,7 +126,7 @@ namespace SMSAPI.Data
                 .HasOne(t => t.Teacher).WithMany(tg => tg.Grades).HasForeignKey(t => t.TeacherId);
             modelBuilder.Entity<TeacherGrades>()
                 .HasOne(g => g.Grade).WithMany(tg => tg.TeacherGrades).HasForeignKey(g => g.GradeId);
-            
+
             //teacher and subject mapping logic here 
             modelBuilder.Entity<TeacherSubject>()
                 .HasKey(tg => new { tg.TeacherId, tg.SubjectId });
@@ -136,6 +151,17 @@ namespace SMSAPI.Data
             modelBuilder.Entity<Grade>()
                 .HasMany(cr => cr.ClassRooms).WithOne(gr => gr.Grade).HasForeignKey(cr => cr.ClassGradeId);
 
+            modelBuilder.Entity<DepartmentTeacher>()
+                .HasKey(dt => new { dt.DepartmentId, dt.TeacherId });
+            modelBuilder.Entity<DepartmentTeacher>()
+                .HasOne(d => d.Department).WithMany(dt => dt.Teachers).HasForeignKey(d => d.DepartmentId);
+            modelBuilder.Entity<DepartmentTeacher>()
+                .HasOne(d => d.Teacher).WithOne(dt => dt.Department).HasForeignKey<Teacher>(d => d.TeacherId);
+
+            modelBuilder.Entity<Department>()
+                .HasMany(cr => cr.Staff).WithOne(gr => gr.Department).HasForeignKey(cr => cr.StaffDepartmentId);
+
+
             //one to one mapping
             modelBuilder.Entity<Guardian>()
                 .HasMany(p => p.Pupils).WithOne(g => g.Guardian).HasForeignKey(p => p.PupilGuardianId);
@@ -150,6 +176,11 @@ namespace SMSAPI.Data
             modelBuilder.Entity<Teacher>()
                 .HasOne(tc => tc.TeacherContact).WithOne(t => t.Teacher).HasForeignKey<TeacherContact>(tc => tc.TeacherContactTeacherId);
 
+            modelBuilder.Entity<Staff>()
+                .HasOne(ta => ta.StaffAddress).WithOne(t => t.Staff).HasForeignKey<StaffAddress>(ta => ta.StaffAddressStaffId);
+            modelBuilder.Entity<Staff>()
+                .HasOne(tc => tc.StaffContact).WithOne(t => t.Staff).HasForeignKey<StaffContact>(tc => tc.StaffContactStaffId);
         }
     }
 }
+

@@ -34,10 +34,12 @@ namespace SMSAPI
             builder.Services.AddScoped<ITeacherContactRepository, TeacherContactRepository>();
             builder.Services.AddScoped<ITeacherAddressRepository, TeacherAddressRepository>();
             builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            builder.Services.AddScoped<IStaffRepository, StaffRepository>();
 
             builder.Services.AddScoped<AuthFilter>();
             builder.Services.AddScoped<IAuthentication, Authentication_>();
-            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddEndpointsApiExplorer(); 
 
             //api endpoint security section
             builder.Services.AddSwaggerGen(/*x =>
