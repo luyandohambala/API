@@ -34,8 +34,9 @@ namespace SMSAPI
             builder.Services.AddScoped<ITeacherContactRepository, TeacherContactRepository>();
             builder.Services.AddScoped<ITeacherAddressRepository, TeacherAddressRepository>();
             builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
-            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>(); 
             builder.Services.AddScoped<IStaffRepository, StaffRepository>();
+            builder.Services.AddScoped<IEquipmentRepository, EquipmentRepository>();
 
             builder.Services.AddScoped<AuthFilter>();
             builder.Services.AddScoped<IAuthentication, Authentication_>();
@@ -43,7 +44,7 @@ namespace SMSAPI
 
             //api endpoint security section
             builder.Services.AddSwaggerGen(/*x =>
-            {
+            { 
                 x.AddSecurityDefinition("ApiKey", new OpenApiSecurityScheme
                 {
                     Description = "The Api Key to access the EndPoint",

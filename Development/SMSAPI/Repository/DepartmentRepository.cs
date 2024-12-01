@@ -43,6 +43,11 @@ namespace SMSAPI.Repository
             return [.. _context.Departments.OrderBy(d => d.DepartmentId)];
         }
 
+        public ICollection<Staff> GetStaffByDepartmentId(Guid departmentId)
+        {
+            return [.. _context.Staff.Where(s => s.StaffDepartmentId == departmentId)];
+        }
+
         public ICollection<Teacher> GetTeachersByDepartmentId(Guid departmentId)
         {
             return [.. _context.DepartmentTeachers.Where(dt => dt.DepartmentId == departmentId).Select(t => t.Teacher)];

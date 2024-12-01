@@ -11,6 +11,8 @@ namespace SMSAPI.Interfaces
 
         ICollection<Teacher> GetTeachersByDepartmentId(Guid departmentId);
 
+        ICollection<Staff> GetStaffByDepartmentId(Guid departmentId);   
+
 
         //write methods
         bool CreateDepartment(Department department);

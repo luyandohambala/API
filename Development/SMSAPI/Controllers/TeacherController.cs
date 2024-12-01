@@ -84,7 +84,7 @@ namespace SMSAPI.Controllers
         //[ServiceFilter(typeof(AuthFilter))]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
-        public IActionResult Createteacher([FromBody] TeacherCreateDto teacherCreate)
+        public IActionResult CreateTeacher([FromBody] TeacherCreateDto teacherCreate)
         {
             if (teacherCreate == null) return BadRequest(ModelState);
 
@@ -120,7 +120,7 @@ namespace SMSAPI.Controllers
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
-        public IActionResult Updateteacher(Guid teacherId, [FromBody] TeacherUpdateDto teacherUpdate)
+        public IActionResult UpdateTeacher(Guid teacherId, [FromBody] TeacherUpdateDto teacherUpdate)
         {
             if (teacherUpdate == null) return BadRequest(ModelState);
 
@@ -157,7 +157,7 @@ namespace SMSAPI.Controllers
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
-        public IActionResult Deleteteacher(Guid teacherId)
+        public IActionResult DeleteTeacher(Guid teacherId)
         {
             if (!_teacherRepository.TeacherExists(teacherId)) return NotFound();
 

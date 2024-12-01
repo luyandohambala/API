@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using SMSAPI.Dto.ClassRoomDto;
 using SMSAPI.Dto.DepartmentDto;
+using SMSAPI.Dto.EquipmentDto;
 using SMSAPI.Dto.GuardianContactDto;
 using SMSAPI.Dto.GuardianDto;
 using SMSAPI.Dto.IngredientDto;
@@ -40,7 +41,7 @@ namespace SMSAPI.Helper
             CreateMap<ReportCard, ReportCardWithReportCardSubjectsDto>();
 
             CreateMap<ReportCardSubjects, ReportCardSubjectReadDto>();
-
+             
             CreateMap<Guardian, GuardianReadDto>();
 
             CreateMap<GuardianContact, GuardianContactReadDto>();
@@ -69,6 +70,9 @@ namespace SMSAPI.Helper
 
             CreateMap<StaffAddress, StaffAddressReadDto>();
 
+            CreateMap<Equipment, EquipmentReadDto>();
+
+
             //From Dto Mapping
             CreateMap<ClassRoomCreateDto, ClassRoom>();
             CreateMap<ClassRoomUpdateDto, ClassRoom>();
@@ -88,7 +92,7 @@ namespace SMSAPI.Helper
             CreateMap<GuardianCreateDto, Guardian>();
             CreateMap<GuardianUpdateDto, Guardian>();
 
-            CreateMap<GuardianContactReadDto, GuardianContact>();
+            CreateMap<GuardianContactReadDto, GuardianContact>(); 
             CreateMap<GuardianContactUpdateDto, GuardianContact>();
 
             CreateMap<RegisterCreateDto, Register>();
@@ -127,6 +131,9 @@ namespace SMSAPI.Helper
             
             CreateMap<StaffCreateDto, Staff>();
             CreateMap<StaffUpdateDto, Staff>();
+
+            CreateMap<EquipmentCreateDto, Equipment>();
+            CreateMap<EquipmentUpdateDto, Equipment>();
         }
     }
 }

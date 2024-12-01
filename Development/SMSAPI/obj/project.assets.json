@@ -1029,23 +1029,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TINOTECH\\.nuget\\packages\\": {},
+    "C:\\Users\\luyan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\SMSAPI.csproj",
+      "projectUniqueName": "D:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\SMSAPI.csproj",
       "projectName": "SMSAPI",
-      "projectPath": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\SMSAPI.csproj",
-      "packagesPath": "C:\\Users\\TINOTECH\\.nuget\\packages\\",
-      "outputPath": "I:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\obj\\",
+      "projectPath": "D:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\SMSAPI.csproj",
+      "packagesPath": "C:\\Users\\luyan\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\c#\\Business\\API\\Development\\SMSAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\TINOTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luyan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1110,7 +1110,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

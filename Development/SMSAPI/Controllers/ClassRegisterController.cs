@@ -42,7 +42,7 @@ namespace SMSAPI.Controllers
         //get classregister by classid
         [HttpGet("ClassRegister/Id/{classRegisterId}")]
         //[ServiceFilter(typeof(AuthFilter))]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<ClassRegister>))]
+        [ProducesResponseType(200, Type = typeof(ClassRegister))]
         [ProducesResponseType(400)]
         public IActionResult GetClassRegisterByClassId(Guid classRegisterId)
         {

@@ -69,11 +69,14 @@ namespace SMSAPI.Data
         public DbSet<StaffAddress> StaffAddresses { get; set; }
 
         //staffcontact table
-        public DbSet<StaffContact> StaffContacts { get; set; }
-        
+        public DbSet<StaffContact> StaffContacts { get; set; }        
 
         //staff table
         public DbSet<Staff> Staff { get; set; }
+
+        //equipment table
+        public DbSet<Equipment> Equipment { get; set; }     
+
 
 
         //Join tables
@@ -160,6 +163,9 @@ namespace SMSAPI.Data
 
             modelBuilder.Entity<Department>()
                 .HasMany(cr => cr.Staff).WithOne(gr => gr.Department).HasForeignKey(cr => cr.StaffDepartmentId);
+            
+            modelBuilder.Entity<Department>()
+                .HasMany(cr => cr.Equipment).WithOne(gr => gr.Department).HasForeignKey(cr => cr.EquipmentDepartmentId);
 
 
             //one to one mapping

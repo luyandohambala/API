@@ -12,7 +12,9 @@
 
         //navigation properties
         public ICollection<DepartmentTeacher> Teachers { get; set; }
-         
+
+        public ICollection<Equipment> Equipment { get; set; }
+
         public ICollection<Staff> Staff { get; set; }   
     }
 }
